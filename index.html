@@ -1,1 +1,144 @@
-<h1>Hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        @font-face {
+            font-family: font1;
+            src: url(fonts/Blanche.ttf);
+        }
+        @font-face {
+            font-family: font2;
+            src: url(fonts/HappyHolliday.ttf);
+        }
+        @font-face {
+            font-family: font3;
+            src: url(fonts/SweetAromatic.ttf);
+        }
+        @font-face {
+            font-family: font4;
+            src: url(fonts/Poppins-BlackItalic.ttf);
+        }
+        body{margin: 0;
+             padding: 0;
+            display: flex;}
+        .panel{width: 25%;
+               height: 100vh;
+               background-color: whitesmoke;
+            }
+        .panel ul {display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            padding: 1%;
+            justify-content: center;
+        }
+
+        .panel ul li {list-style: none;
+            width: 60px;
+            height: 60px;
+            border: 1px solid gray;
+        }
+
+        .panel h3 {padding: 1% 5%;
+            margin: 0;
+            background-color: #404040;
+            color: white;
+        }
+        #pro{gap: 20px;}
+        #color{gap: 10px;}
+        #color li{width: 40px;
+                  height: 40px;}
+        .teal{background-color: teal;}
+        .blue{background-color: blue;}
+        .yellow{background-color: yellow;}
+        .red{background-color: red;}
+        .lightsalmon{background-color:lightsalmon;}
+        .blueviolet{background-color: blueviolet;}
+        #trans{gap: 20px;}
+        #trans li{width: 80px;
+                   height: 25px;
+                    text-align: center;}
+        #font{gap: 10px;}
+        #font li{width: 60px;
+                 height: 20px;
+                 text-align: center;}
+        .window{width: 75%;
+                height: 100vh;
+                background-color: blanchedalmond;
+                position:relative;}
+        #card{width: 52%;
+              height: 45vh;
+             margin: 25vh 23%;
+             border: 1px solid transparent;
+             }
+        #img{width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            position: absolute;
+             left:58%;
+             top:34vh;
+      }
+        #txt{position: absolute;
+             left:28%;
+            top:30vh;
+            line-height:1.6;}
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h3>Background Images</h3>
+        <ul>
+            <li onclick="document.getElementById('card').src='images/bg2.jpg'"><img src="images/bg2.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('card').src='images/bg3.jpg'"><img src="images/bg3.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('card').src='images/bg8.jpg'"><img src="images/bg8.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('card').src='images/bg5.jpg'"><img src="images/bg5.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('card').src='images/bg6.jpg'"><img src="images/bg6.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('card').src='images/bg7.jpg'"><img src="images/bg7.jpg" width="100%" height="60px" alt=""></li>
+        </ul>
+        <h3>Profile Photos</h3>
+        <ul id="pro">
+            <li onclick="document.getElementById('img').src='images/person1.jpg'"><img src="images/person1.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('img').src='images/person2.jpg'"><img src="images/person2.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('img').src='images/person3.jpg'"><img src="images/person3.jpg" width="100%" height="60px" alt=""></li>
+            <li onclick="document.getElementById('img').src='images/person4.jpg'"><img src="images/person4.jpg" width="100%" height="60px" alt=""></li>
+        </ul>
+        <h3>Text Colour</h3>
+        <ul id="color">
+           <li onclick="document.getElementById('txt').style.color='teal'" class="teal"></li>
+           <li onclick="document.getElementById('txt').style.color='blue'" class="blue"></li>
+           <li onclick="document.getElementById('txt').style.color='red'" class="red"></li>
+           <li onclick="document.getElementById('txt').style.color='yellow'" class="yellow"></li>
+           <li onclick="document.getElementById('txt').style.color='lightsalmon'" class="lightsalmon"></li>
+           <li onclick="document.getElementById('txt').style.color='blueviolet'" class="blueviolet"></li>
+        </ul>
+        <h3>Text Transform</h3>
+        <ul id="trans">
+            <li onclick="document.getElementById('txt').style.textTransform='uppercase'">Uppercase</li>
+            <li onclick="document.getElementById('txt').style.textTransform='lowercase'">Lowercase</li>
+            <li onclick="document.getElementById('txt').style.textTransform='capitalize'">Capitalize</li>
+        </ul>
+        <h3>Font Style</h3>
+        <ul id="font">
+            <li onclick="document.getElementById('txt').style.fontFamily='font1'">Font1</li>
+            <li onclick="document.getElementById('txt').style.fontFamily='font2'">Font2</li>
+            <li onclick="document.getElementById('txt').style.fontFamily='font3'">Font3</li>
+            <li onclick="document.getElementById('txt').style.fontFamily='font4'">Font4</li>
+        </ul>
+    </div>
+    <div class="window">
+           <script>
+             document.write('<img src="images/bg1.jpg" alt="banner" id="card" >');
+             document.write('<img src="images/person1.jpg" alt="banner" id="img" >');
+             document.write('<h1 id="txt" > Name: <br> Email: <br> Mobile No. :</h1>');
+             
+             
+             
+           </script>
+             
+        </div>
+    </div>
+</body>
+  </html>
