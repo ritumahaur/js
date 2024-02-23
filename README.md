@@ -1,2 +1,2 @@
-# ritumahaur.github.io
+# ritumahaur.github.js
 My website 
